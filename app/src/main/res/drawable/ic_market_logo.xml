@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Outer rounded square background -->
+    <path
+        android:fillColor="#151C2C"
+        android:pathData="M8,4h32c2.2,0 4,1.8 4,4v32c0,2.2 -1.8,4 -4,4H8c-2.2,0 -4,-1.8 -4,-4V8c0,-2.2 1.8,-4 4,-4z" />
+    <!-- Candlestick 1 (Green) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M14,14h2v4h-2z M13,18h4v12h-4z M14,30h2v4h-2z" />
+    <!-- Candlestick 2 (Red) -->
+    <path
+        android:fillColor="#EF4444"
+        android:pathData="M23,10h2v4h-2z M22,14h4v10h-4z M23,24h2v4h-2z" />
+    <!-- Candlestick 3 (Green) -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M32,16h2v3h-2z M31,19h4v13h-4z M32,32h2v4h-2z" />
+    <!-- Trend curve line (Neon Cyan) -->
+    <path
+        android:strokeColor="#06B6D4"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M8,34 Q18,28 24,20 T40,12" />
+</vector>

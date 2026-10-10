@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MarketPulse</string>
+    <string name="app_subtitle">Real-Time Share Markets &amp; Stock Intelligence</string>
+    <string name="search_hint">Search stocks, symbols, or indices (e.g. AAPL, NIFTY)...</string>
+    <string name="market_indices_label">GLOBAL &amp; DOMESTIC INDICES</string>
+    <string name="market_stocks_label">STOCKS &amp; EQUITIES</string>
+    <string name="breaking_news_label">BREAKING MARKET NEWS</string>
+    
+    <!-- Filter Chips -->
+    <string name="filter_all">All Assets</string>
+    <string name="filter_gainers">🚀 Top Gainers</string>
+    <string name="filter_losers">📉 Top Losers</string>
+    <string name="filter_india">🇮🇳 Indian Equities</string>
+    <string name="filter_us">🇺🇸 US Tech Giants</string>
+    <string name="filter_indices">📊 Market Indices</string>
+    <string name="filter_commodities">🪙 Commodities</string>
+    <string name="filter_watchlist">⭐ Watchlist</string>
+
+    <!-- Stock Detail Labels -->
+    <string name="detail_statistics">KEY STATISTICS &amp; VALUATION</string>
+    <string name="detail_day_range">DAY RANGE (LOW / HIGH)</string>
+    <string name="detail_year_range">52-WEEK RANGE</string>
+    <string name="detail_open">OPEN PRICE</string>
+    <string name="detail_prev_close">PREVIOUS CLOSE</string>
+    <string name="detail_volume">VOLUME</string>
+    <string name="detail_market_cap">MARKET CAP</string>
+    <string name="detail_pe_ratio">P/E RATIO</string>
+    <string name="detail_sentiment">MARKET SENTIMENT</string>
+    <string name="detail_about">ABOUT COMPANY</string>
+</resources>

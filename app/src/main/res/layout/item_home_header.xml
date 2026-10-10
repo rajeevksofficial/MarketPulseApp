@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Market Overview Sentiment Card -->
+    <LinearLayout
+        android:id="@+id/cardMarketOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_hero_card"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_sparkles" />
+
+            <TextView
+                android:id="@+id/tvOverviewBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="MARKET SENTIMENT: BULLISH MOMENTUM"
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvLiveIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="● LIVE TICKER"
+                android:textColor="#06B6D4"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvOverviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Nifty 50 &amp; Tech Giants Advance Amid Global Institutional Buying"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvOverviewStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="21 Gainers • 5 Losers • Top Gainer: NVDA (+4.01%) • NIFTY +1.30%"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Global & Domestic Indices Section Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/market_indices_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Swipe →"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Horizontal RecyclerView for Market Indices -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMarketIndices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never" />
+
+    <!-- Breaking Share Market News Section Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:src="@drawable/ic_newspaper" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:text="@string/breaking_news_label"
+            android:textColor="@color/accent_gold"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNewsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Updates"
+            android:textColor="@color/text_muted"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Horizontal RecyclerView for Market News -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMarketNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:overScrollMode="never" />
+
+    <!-- Equities & Stocks Header -->
+    <TextView
+        android:id="@+id/tvSectionHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/market_stocks_label"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

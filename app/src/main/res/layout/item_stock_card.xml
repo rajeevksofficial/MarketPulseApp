@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="14dp">
+
+    <!-- Left: Symbol, Name, Badges -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvStockSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="NVDA" />
+
+            <TextView
+                android:id="@+id/tvStockExchange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_badge"
+                android:paddingStart="6dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="NASDAQ" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStockName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            tools:text="NVIDIA Corporation" />
+
+        <TextView
+            android:id="@+id/tvStockCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_muted"
+            android:textSize="10sp"
+            tools:text="US Tech • Semiconductors" />
+    </LinearLayout>
+
+    <!-- Center: Sparkline Mini Chart -->
+    <com.marketpulse.app.SparklineView
+        android:id="@+id/sparklineStock"
+        android:layout_width="70dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp" />
+
+    <!-- Right: Price, Change Pill, Bookmark Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvStockPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="$134.80" />
+
+            <ImageView
+                android:id="@+id/btnBookmark"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="8dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Watchlist"
+                android:padding="2dp"
+                android:src="@drawable/ic_bookmark" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStockChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_pill_gain"
+            android:paddingStart="8dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="3dp"
+            android:textColor="@color/market_gain"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            tools:text="+4.01%" />
+    </LinearLayout>
+
+</LinearLayout>
